@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services - Njorox Car Hub</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="logo">Njorox Car Hub</a>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="navbar-links" id="navbar-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <main class="services-page">
+    <h1>Our Services</h1>
+    <p class="services-head">
+      At Njorox Car Hub, we provide a range of professional automotive services to ensure your experience is smooth, affordable, and reliable.
+    </p>
+
+    <div class="service-card-container">
+      <div class="service-card">
+        <img src="images/car-sales.jpeg" alt="Car Sales" />
+        <div class="card-content">
+          <h2>Car Sales</h2>
+          <p>Explore a range of new and pre-owned vehicles. Get expert help to find your perfect ride with flexible payment plans and trusted brands.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/car-rentals.jpeg" alt="Car Rentals" />
+        <div class="card-content">
+          <h2>Car Rentals</h2>
+          <p>Choose from our clean, reliable rental cars—ideal for daily use, road trips, or business travel. Book quickly and affordably.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/car-repair.jpeg" alt="Car Repairs" />
+        <div class="card-content">
+          <h2>Car Repairs</h2>
+          <p>From diagnostics to full repairs, our certified mechanics ensure your car gets back on the road safely and efficiently.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/roadside-assistance.jpeg" alt="roadside Assistance" />
+        <div class="card-content">
+          <h2>Roadside Assistance</h2>
+          <p>24/7 support when you need it most. We provide towing, jump-starts, tire changes, and fuel delivery with quick response times.</p>
+        </div>
+      </div>
+
+      <div class="service-card">
+        <img src="images/fleet-management.jpeg" alt="Fleet Management" />
+        <div class="card-content">
+          <h2>Fleet Management</h2>
+          <p>Efficient, tech-enabled fleet services for businesses. Get tracking, maintenance, and full support tailored to your operations.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Njorox Car Hub. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </div>
+    </div>
+    <div class="social-media">
+      <p>Follow us on:</p>
+      <a href="#">Facebook</a>
+      <a href="#">Twitter</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+    </div>
+  </footer>
+  <script>
+  // Hamburger menu toggle
+  const toggleBtn = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('navbar-links');
+  toggleBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+
+  // Dropdown toggle for mobile
+  document.querySelectorAll('.dropdown > .dropbtn').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.parentElement.classList.toggle('open');
+      }
+    });
+  });
+</script>
+</body>
+</html>
